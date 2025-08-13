@@ -11,4 +11,4 @@ CORS(app)  # Enable CORS for all routes
 app.register_blueprint(interview_bp)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, use_reloader=False)

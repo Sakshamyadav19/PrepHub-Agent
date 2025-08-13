@@ -16,16 +16,4 @@ class Interview(BaseModel):
     description: Optional[str] = ""
 
 
-# mock interviews for now
-mock_interviews = [
-    {"id": "1", "company": "Google", "role": "Software Engineer"},
-    {"id": "2", "company": "Amazon", "role": "Data Scientist"},
-    {"id": "3", "company": "OpenAI", "role": "ML Engineer"}
-]
-
-def get_interview_by_id(interview_id):
-    for interview in mock_interviews:
-        if interview["id"] == interview_id:
-            return interview
-    return None
 
